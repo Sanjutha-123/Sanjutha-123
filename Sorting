@@ -1,0 +1,37 @@
+import random as r
+def bubblesort(lst) :
+    sorted = False 
+    while sorted == False :                      
+        sorted = True 
+        for i in range(len(lst)-1):
+            if lst[i]>lst[i+1]:                   
+                sorted =  False                 
+                lst[i],lst[i+1]=lst[i+1],lst[i] 
+    return lst 
+
+def randomlistmaker(L) :
+    n=int(input("enter the length of the list you want"))
+    for i in range(n) :
+        L.append(r.randint(0,100))
+    return L
+K=[]
+print(bubblesort(randomlistmaker(K)))
+def insertionsort(arr):
+    for i in range(1, len(arr)):
+      j = i
+        while arr[j-1] > arr[j] and j > 0
+            arr[j-1], arr[j] = arr[j], arr[j-1]
+            j -= 1
+  print(arr, "after sorting")
+L = eval(input("enter a list of integers"))
+insertionsort(L)
+
+def selectionsort(arr):    
+    for i in range(0, len(arr) - 1):
+        mindex = j 
+         for j in range(i + 1, len(arr)):
+            if arr[j] < arr[mindex]:
+               mindex = j
+        arr[mindex], arr[i] = arr[i], arr[mindex]
+    print(arr)
+selectionsort([3, 6, 3, 6, 8, 3, 3, 7])
